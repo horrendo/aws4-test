@@ -1,0 +1,14 @@
+{
+  "name": "aws4-axios-tst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "aws4-axios": "^3.3.0",
+    "axios": "^1.6.2"
+  }
+}
