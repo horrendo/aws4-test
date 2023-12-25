@@ -37,3 +37,19 @@ src/main.ts:5:32 - error TS2345: Argument of type '(config: InternalAxiosRequest
 
 Found 1 error in src/main.ts:5
 ```
+
+## Workaround
+
+Making this change resolves the compilation error.
+
+from:
+
+```typescript
+axios.interceptors.request.use(interceptor);
+```
+
+to:
+
+```typescript
+axios.interceptors.request.use(<any>interceptor);
+```
